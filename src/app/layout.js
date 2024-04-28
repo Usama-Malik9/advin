@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import { FaChartPie, FaList } from "react-icons/fa";
 import { MdNetworkCheck } from "react-icons/md";
 import { GiProcessor } from "react-icons/gi";
-import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
+import { IoIosExpand } from "react-icons/io";
+import { TbLayoutSidebarLeftCollapse, TbLayoutSidebarRightCollapse } from "react-icons/tb";
 import { Button, Layout, Menu, theme } from 'antd';
 import "./globals.css";
 import Dashboard from './dashboard';
@@ -58,14 +59,16 @@ export default function RootLayout({ children }) {
           </Sider>
           <Layout>
             <Header
+
               style={{
+                marginLeft: "10px",
                 padding: 0,
                 background: colorBgContainer,
               }}
             >
               <Button
                 type="text"
-                icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+                icon={collapsed ? <TbLayoutSidebarRightCollapse color="black" size={30} /> : <TbLayoutSidebarLeftCollapse color="black" size={30} />}
                 onClick={() => setCollapsed(!collapsed)}
                 style={{
                   fontSize: '16px',
