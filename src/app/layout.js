@@ -11,6 +11,7 @@ import Dashboard from './dashboard';
 import Lists from './lists';
 import Network from './network';
 import Process from './process';
+import { FaUserCircle } from "react-icons/fa";
 
 const { Header, Sider, Content } = Layout;
 
@@ -66,6 +67,7 @@ export default function RootLayout({ children }) {
                 background: colorBgContainer,
               }}
             >
+
               <Button
                 type="text"
                 icon={collapsed ? <TbLayoutSidebarRightCollapse color="black" size={30} /> : <TbLayoutSidebarLeftCollapse color="black" size={30} />}
@@ -76,6 +78,9 @@ export default function RootLayout({ children }) {
                   height: 64,
                 }}
               />
+              <div style={{ position: 'absolute', top: 25, right: 30 }}>
+                <FaUserCircle size={25} />
+              </div>
             </Header>
             <Content
               style={{

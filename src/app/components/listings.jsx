@@ -36,12 +36,12 @@ const DeviceCards = () => {
     ];
 
     return (
-        <div style={{ padding: '20px' }}>
+        <div style={{ padding: '20px' }} >
             <h1 style={{ fontSize: '30px', marginBottom: '10px' }}>Level 1</h1>
             <Row gutter={[16, 16]}>
                 {dummyData.slice(0, 6).map((item, index) => (
                     <Col span={4} key={index}>
-                        <Card hoverable style={{ backgroundColor: 'lightblue' }}>
+                        <Card hoverable style={{ boxShadow: '0 4px 6px rgba(0, 0, 0, 0.4)', }}>
                             {item.device === 'Laptop' && <FaLaptop color="black" style={{ fontSize: '36px' }} />}
                             {item.device === 'Desktop' && <IoDesktopSharp style={{ fontSize: '36px' }} />}
                             {item.device === 'Mobile' && <FaMobileAlt style={{ fontSize: '36px' }} />}
@@ -58,7 +58,7 @@ const DeviceCards = () => {
             <Row gutter={[16, 16]} style={{ marginTop: '20px' }}>
                 {dummyData.slice(5, 11).map((item, index) => (
                     <Col span={4} key={index}>
-                        <Card hoverable style={{ backgroundColor: 'lightblue' }}>
+                        <Card hoverable style={{ boxShadow: '0 4px 6px rgba(0, 0, 0, 0.4)', }}>
                             {item.device === 'Laptop' && <FaLaptop style={{ fontSize: '36px' }} />}
                             {item.device === 'Desktop' && <IoDesktopSharp style={{ fontSize: '36px' }} />}
                             {item.device === 'Mobile' && <FaMobileAlt style={{ fontSize: '36px' }} />}
@@ -72,11 +72,11 @@ const DeviceCards = () => {
                     </Col>
                 ))}
             </Row>
-            <h1 style={{ fontSize: '30px', marginBottom: '10px' }}>Level 2</h1>
+            <h1 style={{ fontSize: '30px', margin: '20px 0px' }}>Level 2</h1>
             <Row gutter={[16, 16]}>
                 {dummyData2.slice(0, 6).map((item, index) => (
                     <Col span={4} key={index}>
-                        <Card hoverable style={{ backgroundColor: 'lightblue' }}>
+                        <Card hoverable style={{ boxShadow: '0 4px 6px rgba(0, 0, 0, 0.4)', }}>
                             {item.device === 'Laptop' && <FaLaptop color="black" style={{ fontSize: '36px' }} />}
                             {item.device === 'Desktop' && <IoDesktopSharp style={{ fontSize: '36px' }} />}
                             {item.device === 'Mobile' && <FaMobileAlt style={{ fontSize: '36px' }} />}
@@ -93,7 +93,7 @@ const DeviceCards = () => {
             <Row gutter={[16, 16]} style={{ marginTop: '20px' }}>
                 {dummyData2.slice(5, 11).map((item, index) => (
                     <Col span={4} key={index}>
-                        <Card hoverable style={{ backgroundColor: 'lightblue' }}>
+                        <Card hoverable style={{ boxShadow: '0 4px 6px rgba(0, 0, 0, 0.4)' }}>
                             {item.device === 'Laptop' && <FaLaptop style={{ fontSize: '36px' }} />}
                             {item.device === 'Desktop' && <IoDesktopSharp style={{ fontSize: '36px' }} />}
                             {item.device === 'Mobile' && <FaMobileAlt style={{ fontSize: '36px' }} />}

@@ -16,7 +16,7 @@ const DashboardCards = () => {
     return (
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
             {icons.map((icon, index) => (
-                <Card key={index} style={{ width: "300px", height: "150px", backgroundColor: "lightblue", marginBottom: "20px" }}>
+                <Card key={index} style={{ boxShadow: '0 4px 6px rgba(0, 0, 0, 0.4)', width: "300px", height: "150px", marginBottom: "20px" }} hoverable>
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '10px' }}>
                         {icon}
                         <Text style={{ marginLeft: '15px', fontSize: '30px' }}>{texts[index]}</Text>
