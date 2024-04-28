@@ -2,32 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.ant-table-wrapper.ui-table-border-none .ant-table .ant-table-container {
+  border: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.anticon svg {
+  display: inline-block;
+  color: white;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.ant-table-wrapper.ui-table-sm .ant-table .ant-table-content .ant-table-thead tr>th.ant-table-cell {
+  font-size: 14px;
+  font-weight: 700;
+  border-right: none;
+  background-color: #3296d9;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  padding: 6px 8px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.ant-table-wrapper.ui-table-sm .ant-table .ant-table-content .ant-table-tbody tr>td.ant-table-cell {
+  font-size: 14px;
+  font-family: 'Nunito', sans-serif;
+  border-right: none;
+  padding: 6px 8px;
 }
